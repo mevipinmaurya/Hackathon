@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Research & Devlopement</title>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">NucleoNex</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="faculty.html" class="active">Faculty</a></li>
+            <li><a href="faculty.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Student page starts here  -->
+    <section class="add-faculty">
+        <h2>Add Students</h2>
+        <form action="" id="faculty-form">
+            <div class="faculty-forms-el">
+                <div class="faculty-inp">
+                    <input type="text" placeholder="Enter Student Name" id="sName">
+                </div>
+                <div class="faculty-inp">
+                    <input type="email" placeholder="Enter Student Email" id="sEmail">
+                </div>
+            </div>
+            <div class="faculty-forms-el">
+                <div class="faculty-inp">
+                    <input type="text" placeholder="Enter Student Branch" id="sBranch">
+                </div>
+                <div class="faculty-inp">
+                    <input type="text" placeholder="Enter Student Year" id="sYear">
+                </div>
+            </div>
+            <div class="faculty-forms-el">
+                <button type="submit" id="addStudent">Add</button>
+            </div>
+        </form>
+    </section>
+
+
+
+    <!-- Displaying students details -->
+    <section class="tables">
+        <h2>All Students Details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Students ID</th>
+                    <th>Students Name</th>
+                    <th>Students Email</th>
+                    <th>Branch</th>
+                    <th>year</th>
+                    <th>Present/Absent</th>
+                </tr>
+            </thead>
+            <tbody id="sTables">
+                <tr>
+                    <!-- <td>101</td>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                    <td>Second</td>
+                    <td><button id="btnPresent">P</button><button class="btn-red" id="btnAbsent">A</button></td> -->
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+
+    <!-- Assigning Projects to the students ****************** -->
+    <section class="add-faculty">
+        <h2>Assign Projects</h2>
+        <form action="" id="faculty-form">
+            <div class="faculty-forms-el">
+                <div class="faculty-inp">
+                    <select name="projects" id="project">
+                        <option value="Select">Select Project -</option>
+                        <option value="Designing">Designing Chatbot</option>
+                        <option value="FitnessApp">Fitness App</option>
+                        <option value="GymApp">Gym App</option>
+                    </select>
+                </div>
+                <div class="faculty-inp">
+                    <input type="text" placeholder="Student ID">
+                </div>
+            </div>
+            <div class="faculty-forms-el">
+                <h2>Project Status:</h2> 
+                <div class="faculty-inp">
+                    <button class="red">Hold</button>
+                    <button class="yellow">Progress</button>
+                    <button class="green">Completed</button>
+                </div>
+            </div>
+            <div class="faculty-forms-el">
+                <button type="submit">Assign</button>
+            </div>
+        </form>
+    </section>
+
+
+
+
+    <!-- Footer section starts here ******************* -->
+    <!-- Footer section starts here -->
+    <footer class="section-p1">
+        <div class="col">
+            <h2 class="footer-Logo">NucleoNex</h2>
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>562 Wellington Road, Streat 32, San Francisco</p>
+            <p><strong>Phone: </strong>+01 2222 365 /(+91) 0123456789</p>
+            <p><strong>Hours: </strong>10:00 - 18:00. Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="s-icon fa-brands fa-facebook-f"></i>
+                    <i class="s-icon fa-brands fa-twitter"></i>
+                    <i class="s-icon fa-brands fa-instagram"></i>
+                    <i class="s-icon fa-brands fa-pinterest-p"></i>
+                    <i class="s-icon fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Research Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="account.html">Sign In</a>
+            <a href="#">help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="images/app.jpg" alt="">
+                <img src="images/play.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; 2022 - present, All rights reserved. </p>
+        </div>
+    </footer>
+
+
+
+    <script src="js/facultyPage.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
